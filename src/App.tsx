@@ -5,9 +5,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <p>HMS - APP</p>
-    </>
+    <div className="text-center p-4">
+      <h1 className="text-4xl font-bold text-blue-500">Hello, HMS!</h1>
+    </div>
   )
 }
 
