@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  hms-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hms-app-container
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: ["npm", "start"]
+
+volumes:
+  node_modules:
