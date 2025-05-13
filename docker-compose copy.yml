@@ -1,0 +1,9 @@
+services:
+  app:
+    build: 
+      context: .
+    image: hms-app:latest
+    ports:
+      - "3000:3000"
+    environment:
+      NODe_ENV: development
