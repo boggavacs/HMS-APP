@@ -42,8 +42,8 @@ jobs:
         run: |
           docker run -d --name hms-ui -p 8081:80 localhost:3000/name/app:latest
 
-      - name: Stop and remove local Docker registry
-        if: always()
-        run: |
-          docker stop registry || true
-          docker rm registry || true
+      # - name: Stop and remove local Docker registry
+      #   if: always()
+      #   run: |
+      #     docker stop registry || true
+      #     docker rm registry || true
