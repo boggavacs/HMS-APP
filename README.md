@@ -1,5 +1,5 @@
 # HMS-APP
 HMS Frontend application
 
-Display job board
+Display job board.
 
