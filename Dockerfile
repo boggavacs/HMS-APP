@@ -1,4 +1,4 @@
-FROM node:24-alpine@sha256:3c9f5f3e8b8b8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8f8e8
+FROM node:24-alpine
 
 LABEL com.docker.container-name="hms-app01"
 WORKDIR /app
