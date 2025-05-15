@@ -16,6 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Start local Docker registry
+        run: |
+          docker run -d -p 3000:5000 --name registry registry:2 || echo "Registry already running"
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       
@@ -37,3 +41,9 @@ jobs:
       - name: Run Docker container
         run: |
           docker run -d --name hms-ui -p 8081:80 localhost:3000/name/app:latest
+
+      - name: Stop and remove local Docker registry
+        if: always()
+        run: |
+          docker stop registry || true
+          docker rm registry || true
