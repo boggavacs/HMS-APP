@@ -1,6 +1,6 @@
 FROM node:24-alpine
 
-LABEL com.docker.container-name="hms-app01"
+LABEL com.docker.container-name="hms-app-ui"
 WORKDIR /app
 
 COPY package*.json ./
@@ -12,4 +12,4 @@ RUN npm i
 COPY . .
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start:prod"]
