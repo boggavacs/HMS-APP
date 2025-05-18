@@ -42,8 +42,8 @@ jobs:
         run: |
           docker run -d --name hms-app-container -p 3003:3000 localhost:5000/hms-app01:latest
 
-      - name: Stop and remove local Docker registry
-        if: always()
-        run: |
-          docker stop registry || true
-          docker rm registry || true
+    #   - name: Stop and remove local Docker registry commented for local to remove.
+    #     if: always()
+    #     run: |
+    #       docker stop registry || true
+    #       docker rm registry || true
