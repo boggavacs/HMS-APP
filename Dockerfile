@@ -1,15 +1,10 @@
-FROM node:24-alpine
-
-LABEL com.docker.container-name="hms-app-ui"
+FROM node:lts-alpine
+ENV NODE_ENV=production
 WORKDIR /app
-
-COPY package*.json ./
+COPY ["package*.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent
 COPY . .
-RUN rm -rf node_modules/
-RUN npm cache verify
-RUN npm i
-
-COPY . .
-EXPOSE 3000
-
-CMD ["npm", "run", "start:prod"]
+EXPOSE 3003
+RUN chown -R node /app
+USER node
+CMD ["npm", "start"]
