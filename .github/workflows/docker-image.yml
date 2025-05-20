@@ -36,9 +36,14 @@ jobs:
           labels: |
             org.opencontainers.image.title="hms-app"
 
+      - name: Set dynamic Tag
+        id: set-tag
+        run: echo "TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+
       - name: Docker pull  image and run container
         run: |
           docker pull ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
-          docker run -d --name hms-app-container -p 3003:3000 ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
-          docker ps -a
-          docker logs hms-app-container
+          docker tag ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0 ghcr.io/${{ vars.HMS_REPO }}/hms-app:${TAG}
+          # docker run -d --name hms-app-container -p 3003:3000 ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
+          # docker ps -a
+          # docker logs hms-app-container
