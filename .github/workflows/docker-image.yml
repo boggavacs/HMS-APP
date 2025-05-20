@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ secrets.DOCKER_USERNAME }}/hms-app:1.0
+          tags: ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
