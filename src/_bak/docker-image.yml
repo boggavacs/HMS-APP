@@ -1,0 +1,50 @@
+name: Docker Image CI and Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+  workflow_dispatch: {}
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Start local Docker registry
+        run: |
+          docker run -d -p 3000:5000 --name registry registry:2 || echo "Registry already running"
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
+      
+      - name: Build and push to local registry
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: localhost:3000/name/app:latest
+      
+      - name: Inspect
+        run: |
+          docker buildx imagetools inspect localhost:3000/name/app:latest
+
+      - name: Run Docker container
+        run: |
+          docker run -d -p 8081:5000 --restart=always --name hms-ui registry registry:2
+
+      # - name: Stop and remove local Docker registry
+      #   if: always()
+      #   run: |
+      #     docker stop registry || true
+      #     docker rm registry || true
