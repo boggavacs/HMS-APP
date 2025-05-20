@@ -43,7 +43,8 @@ jobs:
 
       - name: docker push image
         run: |
-          docker tag ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0 ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
+          docker tag ghcr.io/${{ vars.HMS_REPO }}/hms-app:latest ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
+          docker push ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
           docker push ghcr.io/${{ vars.HMS_REPO }}/hms-app:latest
 
       - name: docker pull image
