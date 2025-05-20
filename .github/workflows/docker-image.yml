@@ -37,13 +37,17 @@ jobs:
             org.opencontainers.image.title="hms-app"
             org.opencontainers.image.source="https://github.com/boggavacs/HMS-APP"
 
-      - name: Set dynamic Tag
-        id: set-tag
-        run: echo "TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
-
-      - name: Login to GitHub Container package
+      - name: docker build
         run: |
-          echo "${{ secrets.ACCESS_TOKEN }}" | docker login ghcr.io -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          docker build -t ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0 .
+
+      # - name: Set dynamic Tag
+      #   id: set-tag
+      #   run: echo "TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+
+      # - name: Login to GitHub Container package
+      #   run: |
+      #     echo "${{ secrets.ACCESS_TOKEN }}" | docker login ghcr.io -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: docker run container
         run: |
