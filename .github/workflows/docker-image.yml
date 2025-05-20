@@ -35,6 +35,7 @@ jobs:
           tags: ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
           labels: |
             org.opencontainers.image.title="hms-app"
+            org.opencontainers.image.source="https://github.com/boggavacs/HMS-APP"
 
       - name: Set dynamic Tag
         id: set-tag
@@ -42,8 +43,8 @@ jobs:
 
       - name: Docker pull  image and run container
         run: |
-          docker pull ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
-          docker tag ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0 ghcr.io/${{ vars.HMS_REPO }}/hms-app:${TAG}
-          # docker run -d --name hms-app-container -p 3003:3000 ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
+          #docker pull ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
+          #docker tag ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0 ghcr.io/${{ vars.HMS_REPO }}/hms-app:${TAG}
+          docker run -d --name hms-app-container -p 3003:3000 ghcr.io/${{ vars.HMS_REPO }}/hms-app:1.0
           # docker ps -a
           # docker logs hms-app-container
