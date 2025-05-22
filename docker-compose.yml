@@ -9,8 +9,7 @@ services:
       - "3003:3000"
     environment:
       - NODE_ENV=production
-    # command: ["npm", "start"]
-    command: /bin/sh -c "npm run build && npm start"
+    command: /bin/sh -c "npm install --include=dev && npm run build && npm start"
 
 volumes:
   node_modules:
