@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  hms-app:
+    image: ghcr.io/boggavacs/hms-app:1.0  
+    container_name: hms-app-container
+    restart: unless-stopped
+    ports:
+      - "3003:3000"
+    environment:
+      - NODE_ENV=production
+    command: /bin/sh -c "npm run build && npm start"
+
+volumes:
+  node_modules:
