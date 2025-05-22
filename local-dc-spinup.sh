@@ -23,8 +23,3 @@ if [ "$LOCAL_IMAGE_ID" != "$REMOTE_IMAGE_ID" ]; then
 else
   echo "No new image found. Container is up to date."
 fi
-
-# GHCR_TOKEN=$(pass show gh/token)
-# GHCR_USER="boggava"
-# echo $GHCR_TOKEN | docker login ghcr.io -u $GHCR_USER --password-stdin
-# docker compose up -d
