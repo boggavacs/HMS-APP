@@ -2,19 +2,15 @@ version: '3.8'
 
 services:
   hms-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/boggavacs/hms-app:1.0  
     container_name: hms-app-container
     restart: unless-stopped
     ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-      - /app/node_modules
+      - "3003:3000"
     environment:
-      - NODE_ENV=development
-    command: ["npm", "start"]
+      - NODE_ENV=production
+    # command: ["npm", "start"]
+    command: /bin/sh -c "npm run build && npm start"
 
 volumes:
   node_modules:
