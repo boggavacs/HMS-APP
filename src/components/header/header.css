@@ -1,0 +1,41 @@
+
+.hms-header{
+    @apply pt-0 sm:pt-[30px] lg:pt-[30px];
+}
+
+.brand-logo {
+    @apply w-[155px] sm:w-[125px];
+    @apply h-[50px] sm:h-[60px];
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFB703;
+    background-color: #023047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @apply text-[40px] sm:md:text-[48px];
+}
+
+.header-navigation{
+    @apply flex;
+    @apply pr-5 sm:pr-0;
+    /* @apply border-2; */
+    @apply justify-end;
+    @apply gap-5;
+    @apply w-full sm:w-1/4;
+    @apply items-center;
+    @apply text-[30px] sm:text-[30px];
+}
+
+.header-desktop-navigation{
+    @apply grow hidden sm:block;
+    @apply text-right;
+}
+
+.header-nav-icons{
+    @apply flex;
+    @apply gap-5;
+    @apply items-center;
+    @apply text-[30px] sm:text-[30px];
+}

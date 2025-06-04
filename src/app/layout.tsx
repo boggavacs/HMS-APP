@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 import { Outfit } from "next/font/google";
 import React from "react";
 import { HeroUIProvider } from "@heroui/system";
@@ -23,7 +23,8 @@ export default function RootLayout({
       <React.StrictMode>
         <body className={outfit.className}>
           <HeroUIProvider>
-            <main className="2xl:container border-2 md:max-auto sm:max-auto">
+            <div className="bg-pattern"></div>
+            <main className="2xl:container  md:max-auto sm:max-auto">
               <Header  />
                 <div
                   style={{
