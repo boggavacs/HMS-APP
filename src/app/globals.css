@@ -19,12 +19,37 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+*/
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+  /* background: url('../../assets/bg-pattern.png') repeat; */
+}
+
+.bg-pattern {
+  background: url('../../assets/bg-pattern.png') repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  background-color: var(--background, #ffffff);
+  color: var(--foreground, #171717);
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+.primary-btn{
+  height: 45px;
+  @apply bg-yellow text-primary px-5 text-[20px] font-semibold;
+}
