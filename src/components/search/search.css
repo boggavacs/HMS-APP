@@ -1,8 +1,5 @@
 .search-input{
-    width: 630px;
-    /* height: 65px; */
-    @apply h-16;
-    @apply border-1;
-    @apply text-center text-3xl font-semibold text-primary;
-    /* @apply max-w-2xl; */
+    @apply h-14;
+    @apply border-1 border-[#7291A0] text-center text-xl sm:text-3xl lg:text-3xl;
+    @apply focus:outline-none disabled:cursor-not-allowed;
 }

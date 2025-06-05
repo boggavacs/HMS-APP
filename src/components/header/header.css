@@ -1,6 +1,6 @@
 
 .hms-header{
-    @apply pt-0 sm:pt-[30px] lg:pt-[30px];
+    @apply p-0 sm:py-5 lg:py-5;
 }
 
 .brand-logo {
@@ -19,8 +19,6 @@
 
 .header-navigation{
     @apply flex;
-    @apply pr-5 sm:pr-0;
-    /* @apply border-2; */
     @apply justify-end;
     @apply gap-5;
     @apply w-full sm:w-1/4;
@@ -35,7 +33,7 @@
 
 .header-nav-icons{
     @apply flex;
-    @apply gap-5;
+    @apply gap-5 pr-5 sm:pr-0;
     @apply items-center;
     @apply text-[30px] sm:text-[30px];
 }

@@ -24,9 +24,10 @@ export default function RootLayout({
         <body className={outfit.className}>
           <HeroUIProvider>
             <div className="bg-pattern"></div>
-            <main className="2xl:container  md:max-auto sm:max-auto">
+            <main className="container md:max-auto sm:max-auto p-0 ">
               <Header  />
                 <div
+                  className="p-5 sm:p-0 lg:p-0"
                   style={{
                   minHeight: "calc(100dvh - 28px - 28px)",
                   display: "flex",
