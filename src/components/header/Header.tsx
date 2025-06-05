@@ -8,17 +8,7 @@ export default function Header() {
     <div className='flex hms-header'>
       <div className="brand-logo">HMS</div>
       <div className="header-desktop-navigation ">&nbsp;</div>
-      <div className="header-navigation">
-        <Twrap />
-        {/* <MuiWrapper >
-          <Login />
-          <Menu />
-        </MuiWrapper> */}
-        {/* <Twrap className="header-nav-icons"> */}
-          {/* <Login  /> */}
-          {/* <Menu  /> */}
-        {/* </Twrap> */}
-      </div>
+      <div className="header-navigation"><Twrap /></div>
     </div>
   )
 }
