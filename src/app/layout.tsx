@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import { Outfit } from "next/font/google";
 import React from "react";
-import { HeroUIProvider } from "@heroui/system";
+// import { HeroUIProvider } from "@heroui/system";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 
