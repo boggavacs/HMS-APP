@@ -1,10 +1,20 @@
 import HeroBanner from "@/components/hero-banner/HeroBanner";
+import JobListing from "@/components/job-listing/JobListing";
 
 export default function Home() {
+ 
   return (
     <>
-    <HeroBanner />
-    {/* <h1 className="text-3xl font-bold text-center text-blue-600">HMS Remote job & discussion board</h1> */}
+      <HeroBanner />
+      <div className="grid gap-4 grid-rows sm:md:lg:grid-cols-[auto_30%] mt-5">
+        <div className="border-0 gap-5 ">
+          <h2>Job Listings</h2>
+          <JobListing />
+        </div>
+        <div className="border-0 border-primary pl-0 sm:md:lg:border-l-2 border-dotted sm:md:lg:pl-5 align-text-top">
+          <h2>Discussion board</h2>
+        </div>
+      </div>
     </>
   );
 }

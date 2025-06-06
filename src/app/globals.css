@@ -37,7 +37,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 60vh;
+  height: 550px;
 }
 
 main {
@@ -52,4 +52,19 @@ main {
 .primary-btn{
   height: 45px;
   @apply bg-yellow text-primary px-5 text-[20px] font-semibold;
+}
+
+h2 {
+  @apply text-2xl font-semibold;
+  @apply text-primary;
+}
+
+h3 {
+  @apply text-xl font-semibold;
+  @apply text-primary;
+}
+
+p {
+  @apply text-base font-light;
+  @apply text-primary;
 }
