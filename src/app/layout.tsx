@@ -5,6 +5,7 @@ import { Outfit } from "next/font/google";
 import React from "react";
 import { HeroUIProvider } from "@heroui/system";
 import Footer from "@/components/Footer";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "hms.ro",
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <React.StrictMode>
         <body className={outfit.className}>
-          <HeroUIProvider>
+          <Providers>
+          {/* <HeroUIProvider> */}
             <div className="bg-pattern"></div>
             <main className="container md:max-auto sm:max-auto p-0 ">
               <Header  />
@@ -38,7 +40,8 @@ export default function RootLayout({
                 </div>
               <Footer />
             </main>
-          </HeroUIProvider>
+            </Providers>
+          {/* </HeroUIProvider> */}
         </body>
       </React.StrictMode>
     </html>

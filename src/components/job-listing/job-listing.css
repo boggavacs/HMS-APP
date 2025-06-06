@@ -1,0 +1,17 @@
+
+.job-listing{
+    @apply my-5;
+    @apply max-w-sm;
+}
+.job-listing-brand-logo{
+    width: 100px;
+    height: auto;
+    @apply mr-5;
+    @apply bg-tertiary opacity-35;
+}
+
+.list-id{
+    font-size: 14px;
+    @apply text-secondary;
+    font-weight: 500;
+}
