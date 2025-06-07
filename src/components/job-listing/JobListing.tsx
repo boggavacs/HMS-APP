@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import './job-listing.css'
 
 export default function JobListing() {
-   const [numberOfListing] = useState<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); 
+   const [numberOfListing] = useState<number[]>([1, 2, 3, 4, 5, 6, ]); 
   return (
     numberOfListing && numberOfListing.map((_, index: number) => {
         return (

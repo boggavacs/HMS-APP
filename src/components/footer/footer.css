@@ -1,0 +1,12 @@
+.hms-footer {    
+    height: 100px;
+    @apply flex bg-primary justify-end items-center gap-5 pr-5;
+}
+.hms-footer * {
+    @apply text-tertiary text-xl font-thin;
+}
+
+.rotate-120 {
+    @apply transform rotate-[120deg];
+}
+
