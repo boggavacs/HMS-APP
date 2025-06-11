@@ -1,9 +1,8 @@
-/* @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 
+
 
 @theme inline {
   --color-background: var(--background);
@@ -17,18 +16,19 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-*/
 
-@tailwind base;
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+/* @import tailwindcss; */
 
-
-
-body {
-  /* background: url('../../assets/bg-pattern.png') repeat; */
+:root {
+  /* --font-geist-sans: 'Outfit', sans-serif; */
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
 }
 
 .bg-pattern {
@@ -49,6 +49,29 @@ main {
   background-color: transparent;
 }
 
+@theme default{
+  --default-font-family: 'Outfit', sans-serif;
+  --breakpoint-desktop: 96rem;
+  --breakpoint-tablet: 64rem;
+  --breakpoint-mobile: 48rem;
+}
+
+@utility container{
+  max-width: var(--breakpoint-desktop);
+
+  @variant 2xl{
+    max-width: var(--breakpoint-2xl);
+  }
+
+  @variant md{
+    max-width: var(--breakpoint-tablet);
+  }
+}
+
+
+
+
+
 .primary-btn{
   height: 45px;
   @apply bg-yellow text-primary px-5 text-[20px] font-semibold;
@@ -67,4 +90,4 @@ h3 {
 p {
   @apply text-base font-light;
   @apply text-primary;
-}
+} */

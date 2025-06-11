@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/Header";
-import { Outfit } from "next/font/google";
+// import { Outfit } from "next/font/google";
 import React from "react";
 import Footer from "@/components/footer/Footer";
 import { Providers } from "./providers";
@@ -9,9 +9,12 @@ import { Providers } from "./providers";
 export const metadata: Metadata = {
   title: "hms.ro",
   description: "Remote jobs & discussion board",
+
 };
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
+
+
+// const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export default function RootLayout({
   children,
@@ -21,11 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <React.StrictMode>
-        <body className={outfit.className}>
+        <body >
           <Providers>
           {/* <HeroUIProvider> */}
             <div className="bg-pattern"></div>
-            <main className="container md:max-auto sm:max-auto p-0 ">
+            <main className="container max-auto">
+            {/* <main className="container md:max-auto sm:max-auto p-0 "> */}
               <Header  />
                 <div
                   className="p-5 sm:p-0 lg:p-0"
