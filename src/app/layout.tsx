@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/Header";
-// import { Outfit } from "next/font/google";
 import React from "react";
 import Footer from "@/components/footer/Footer";
 import { Providers } from "./providers";
@@ -11,10 +10,6 @@ export const metadata: Metadata = {
   description: "Remote jobs & discussion board",
 
 };
-
-
-
-// const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export default function RootLayout({
   children,
@@ -28,20 +23,14 @@ export default function RootLayout({
           <Providers>
           {/* <HeroUIProvider> */}
             <div className="bg-pattern"></div>
-            <main className="container max-auto">
-            {/* <main className="container md:max-auto sm:max-auto p-0 "> */}
+            <main className="flex flex-row justify-center ">
+              <div className="">
               <Header  />
-                <div
-                  className="p-5 sm:p-0 lg:p-0"
-                  style={{
-                  minHeight: "calc(100dvh - 28px - 28px)",
-                  display: "flex",
-                  flexDirection: "column",
-                  }}
-                >
-                  {children}
-                </div>
+              <div className="bg-blue-500 h-full">
+                {children}
+              </div>
               <Footer />
+              </div>
             </main>
             </Providers>
           {/* </HeroUIProvider> */}
