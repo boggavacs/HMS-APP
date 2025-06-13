@@ -6,8 +6,9 @@
 :root {
   --color-primary: #023047;
   --color-secondary: #FFB703;
-  --color-tertiary: #8ecae6;
+  --color-tertiary: #219EBC;
   --color-quaternary: #fb8500;
+  --color-quinary: #8ecae6;
 }
 
 @layer base{

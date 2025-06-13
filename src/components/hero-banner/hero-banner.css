@@ -1,18 +1,31 @@
 
-/* @import '../../../app/utility.css'; */
+@import "tailwindcss";
+@import '../../app/utility.css';
+@import '../../app/theme.css';
 
-/* @layer components{
+@layer components{
     .hero-banner {
         height: 445px;
-        @apply w-full flex flex-col items-center text-center; 
+        @apply flex flex-col items-center justify-center text-hms-primary;
+        /* @apply w-full flex flex-col items-center text-center;  */
     }
 
-    .hero-banner > h1 {
-        @apply text-4xl font-bold text-primary;
+     .hero-banner > h1 {
+        @apply text-hms-primary;
+        @apply text-4xl lg:text-4xl lg:px-[20rem] text-center font-bold;
     }
     .hero-banner > p {
-        @apply text-secondary text-lg mt-2;
+        @apply text-hms-tertiary;
+        @apply text-3xl lg:px-[20rem] text-center font-light; 
+        @apply mt-2;
     }
-} */
+    .hero-banner > button {
+        @apply bg-hms-secondary;
+        @apply text-hms-primary;
+        @apply px-6 py-3 mt-4;
+        @apply text-xl font-semibold;
+        @apply hover:bg-hms-quaternary transition-colors duration-300;
+    }
+}
 /* src/components/hero-banner/hero-banner.css */
 

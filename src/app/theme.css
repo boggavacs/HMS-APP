@@ -7,4 +7,5 @@
     --color-hms-secondary: var(--color-secondary);
     --color-hms-tertiary: var(--color-tertiary);
     --color-hms-quaternary: var(--color-quaternary);
+    --color-hms-quinary: var(--color-quinary);
   }

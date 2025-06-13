@@ -57,16 +57,15 @@
     .hms-logo{
         @apply w-[155px] sm:w-[125px];
         @apply h-[50px] sm:h-[60px];
-        font-size: 48px;
-        font-weight: 700;
         @apply text-hms-secondary;
-        /* color: var(--color-quaternary); */
-        background-color: #023047;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        @apply bg-hms-primary;
+        @apply flex;
+        @apply items-center;
+        @apply justify-center;
+        @apply text-center;
         @apply text-[40px] sm:md:text-[48px];
+        @apply text-4xl lg:text-5xl;
+        @apply font-bold;
     }
 
     .hms-navigation{
@@ -82,6 +81,7 @@
         @apply flex;
         @apply gap-5 pr-5 sm:pr-0;
         @apply items-center;
+        /* @apply text-2xl; */
         /* @apply text-[30px] sm:text-[30px]; */
     }
 
