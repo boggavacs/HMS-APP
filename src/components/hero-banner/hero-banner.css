@@ -1,4 +1,18 @@
-.hero-banner {
-    height: 445px;
-    @apply text-center gap-y-5;
-}
+
+/* @import '../../../app/utility.css'; */
+
+/* @layer components{
+    .hero-banner {
+        height: 445px;
+        @apply w-full flex flex-col items-center text-center; 
+    }
+
+    .hero-banner > h1 {
+        @apply text-4xl font-bold text-primary;
+    }
+    .hero-banner > p {
+        @apply text-secondary text-lg mt-2;
+    }
+} */
+/* src/components/hero-banner/hero-banner.css */
+

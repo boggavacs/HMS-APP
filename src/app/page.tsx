@@ -5,7 +5,7 @@ import JobListing from "@/components/job-listing/JobListing";
 export default function Home() {
  
   return (
-    <>
+    <div>
       <HeroBanner />
       <div className="grid gap-4 grid-rows sm:md:lg:grid-cols-[auto_30%] mt-5">
         <div className="border-0 gap-5 ">
@@ -19,6 +19,6 @@ export default function Home() {
           <h2>Discussion board</h2>
         </div>
       </div>
-    </>
+    </div>
   );
 }

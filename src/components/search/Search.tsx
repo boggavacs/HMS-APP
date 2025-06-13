@@ -3,7 +3,7 @@ import './search.css';
 
 export default function Search() {
   return (
-    <div className='flex justify-center items-center text-center'>
+    <div className=''>
       <input
       type='text'
       className='search-input'

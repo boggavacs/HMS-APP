@@ -14,7 +14,7 @@ export default function JobListingInfo() {
             </ul>
             <h3>Compensation & Benefits</h3>
             <p>We offer a competitive salary, health insurance, and a flexible work environment.</p>
-            <Button color="primary">Custom Primary Button</Button>
+            <Button>Custom Primary Button</Button>
         </div>
     )
 }

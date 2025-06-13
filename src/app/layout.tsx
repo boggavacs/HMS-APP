@@ -23,10 +23,10 @@ export default function RootLayout({
           <Providers>
           {/* <HeroUIProvider> */}
             <div className="bg-pattern"></div>
-            <main className="flex flex-row justify-center ">
+            <main className="">
               <div className="">
               <Header  />
-              <div className="bg-blue-500 h-full">
+              <div className="h-full">
                 {children}
               </div>
               <Footer />

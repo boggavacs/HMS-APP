@@ -1,12 +1,12 @@
-.hms-footer {    
-    height: 100px;
-    @apply flex bg-primary justify-end items-center gap-5 pr-5;
-}
-.hms-footer * {
-    @apply text-tertiary text-xl font-thin;
-}
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
 
-.rotate-120 {
-    @apply transform rotate-[120deg];
-}
-
+  @layer components {
+    .hms-footer{
+        @apply flex justify-end items-center h-24 gap-5 pr-5 text-hms-secondary bg-hms-primary;
+    }
+    .hms-footer span {
+        @apply transform rotate-[210deg];
+    }
+  }

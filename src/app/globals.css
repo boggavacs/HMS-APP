@@ -1,33 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+@import "./utility.css";
+@import "./theme.css";
 
 :root {
-  /* --font-geist-sans: 'Outfit', sans-serif; */
-  /* --background: #ffffff; */
-  /* --foreground: #171717; */
+  --color-primary: #023047;
+  --color-secondary: #FFB703;
+  --color-tertiary: #8ecae6;
+  --color-quaternary: #fb8500;
 }
 
-.bg-pattern {
+@layer base{
+  body{
+    @apply text-hms-primary;
+  }
+  main{
+    @apply relative z-10 flex flex-row justify-center;
+  }
+  div {
+    @apply mb-3;
+  }
+}
+
+@layer components{
+  .bg-pattern{
+    @apply bg-[url('../../assets/bg-pattern.png')] bg-repeat absolute w-full top-0 left-0 h-[550px];
+  }
+}
+
+
+
+
+
+
+/* @layer components {
+  @apply bg-pattern(''../../assets/bg-pattern.png');
+} */
+
+/* .bg-pattern {
   background: url('../../assets/bg-pattern.png') repeat;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 550px;
-}
+} */
 
-main {
+/* main {
   position: relative;
   z-index: 10;
   background-color: var(--background, #ffffff);
   color: var(--foreground, #171717);
   min-height: 100vh;
   background-color: transparent;
-}
+} */
 
-@theme default{
-  --default-font-family: 'Outfit', sans-serif;
-  --breakpoint-desktop: 96rem;
-  --breakpoint-tablet: 64rem;
-  --breakpoint-mobile: 48rem;
-}
+
