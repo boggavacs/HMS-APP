@@ -8,4 +8,8 @@
     --color-hms-tertiary: var(--color-tertiary);
     --color-hms-quaternary: var(--color-quaternary);
     --color-hms-quinary: var(--color-quinary);
+    /* --text-4xl: 2.25rem;
+    --text-3xl: 1.875rem;
+    --text-2xl: 2.25rem;
+    --text-xl: 1.25rem; */
   }

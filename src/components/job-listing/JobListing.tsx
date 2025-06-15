@@ -8,17 +8,17 @@ export default function JobListing() {
   return (
     numberOfListing && numberOfListing.map((_, index: number) => {
         return (
-            <div className='' key={index}>
-            <div className=''>logo</div>
-            <div className=''>
-                <h3>Sr. Software Engineer</h3>
-                <p>10+ years of  experience React.js, Angular, Node.js</p>
+            <div className='job-listing' key={index}>
+                <div className='job-listing-brand-logo'>logo</div>
                 <div className=''>
-                    <p className=''>#127654</p>
-                    <p>...</p>
+                    <h3>Sr. Software Engineer</h3>
+                    <p>10+ years of  experience React.js, Angular, Node.js</p>
+                    <div className='more-options'>
+                        <p className='list-id'>#127654</p>
+                        <p>...</p>
+                    </div>
                 </div>
             </div>
-        </div>
         );        
     })
     

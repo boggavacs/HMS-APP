@@ -1,17 +1,23 @@
-/* 
-.job-listing{
-    @apply my-5;
-    @apply max-w-sm;
-}
-.job-listing-brand-logo{
-    width: 100px;
-    height: auto;
-    @apply mr-5;
-    @apply bg-tertiary opacity-35;
-}
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
 
-.list-id{
-    font-size: 14px;
-    @apply text-secondary;
-    font-weight: 500;
-} */
+@layer components{
+    .job-listing{
+        @apply flex;
+    }
+
+    .job-listing-brand-logo{
+        width: 100px;
+        height: auto;
+        @apply mr-5;
+        @apply opacity-35;
+        @apply flex items-center justify-center;
+    }
+
+    .list-id{
+        /* font-size: 14px; */
+        @apply text-hms-tertiary;
+        /* font-weight: 500; */
+    } 
+}

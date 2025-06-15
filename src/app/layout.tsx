@@ -24,13 +24,13 @@ export default function RootLayout({
           {/* <HeroUIProvider> */}
             <div className="bg-pattern"></div>
             <main className="">
-              <div className="">
+              {/* <div className=""> */}
               <Header  />
               <div className="h-full">
                 {children}
               </div>
               <Footer />
-              </div>
+              {/* </div> */}
             </main>
             </Providers>
           {/* </HeroUIProvider> */}

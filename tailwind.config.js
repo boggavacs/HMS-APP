@@ -1,6 +1,9 @@
 import { heroui } from '@heroui/theme';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./node_modules/@heroui/theme/dist/components/(button|input|navbar|ripple|spinner|form).js"
+],
   theme: {
     extend: {
       colors: {

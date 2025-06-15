@@ -5,27 +5,27 @@
 
 @layer components{
     .hero-banner {
-        height: 445px;
+        @apply lg:h-[445px];
         @apply flex flex-col items-center justify-center text-hms-primary;
-        /* @apply w-full flex flex-col items-center text-center;  */
+    }
+
+    .hero-banner > *{
+        @apply my-4;
     }
 
      .hero-banner > h1 {
         @apply text-hms-primary;
-        @apply text-4xl lg:text-4xl lg:px-[20rem] text-center font-bold;
+        @apply text-center font-bold;
     }
-    .hero-banner > p {
+    .hero-banner > h4 {
         @apply text-hms-tertiary;
-        @apply text-3xl lg:px-[20rem] text-center font-light; 
-        @apply mt-2;
+        @apply text-xl lg:text-3xl lg:w-[800px] text-center
+        /* @apply text-3xl lg:px-[20rem] text-center font-light;  */
+        /* @apply mt-2; */
     }
-    .hero-banner > button {
-        @apply bg-hms-secondary;
-        @apply text-hms-primary;
-        @apply px-6 py-3 mt-4;
-        @apply text-xl font-semibold;
-        @apply hover:bg-hms-quaternary transition-colors duration-300;
+    .hero-banner > div{
+        @apply flex flex-row;
+        @apply gap-5;
     }
 }
-/* src/components/hero-banner/hero-banner.css */
 

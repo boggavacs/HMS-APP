@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
+
+@layer components {
+
+  .job-listing-info > div:nth-child(1) {
+        @apply flex flex-row justify-end;
+    }
+}
