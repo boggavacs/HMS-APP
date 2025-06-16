@@ -19,21 +19,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <React.StrictMode>
-        <body >
+        <body>
           <Providers>
-          {/* <HeroUIProvider> */}
+            <div className="flex justify-center">
             <div className="bg-pattern"></div>
             <main className="">
-              {/* <div className=""> */}
-              <Header  />
-              <div className="h-full">
+              <Header />
+              <div className="mx-5">
                 {children}
               </div>
               <Footer />
-              {/* </div> */}
             </main>
-            </Providers>
-          {/* </HeroUIProvider> */}
+            </div>
+          </Providers>
         </body>
       </React.StrictMode>
     </html>

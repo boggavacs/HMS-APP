@@ -39,14 +39,14 @@
 
   main{
     /* @apply max-2xl; */
-    @apply relative z-10 flex flex-row justify-center;
-    @apply p-0 lg:px-5;
+    @apply relative z-10;
+    @apply p-0;
   }
   div {
     @apply mb-3;
   }
-  main > div > div:nth-child(2){
-    @apply m-5 lg:m-0;
+  main > div:nth-child(2){
+    /* @apply m-5 lg:m-0; */
   }
 
   input{

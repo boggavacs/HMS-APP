@@ -16,8 +16,6 @@
     }
 
     .list-id{
-        /* font-size: 14px; */
         @apply text-hms-tertiary;
-        /* font-weight: 500; */
     } 
 }

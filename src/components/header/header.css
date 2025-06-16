@@ -51,7 +51,7 @@
 
 @layer components{
     .hms-header{
-        @apply flex flex-row h-14 mt-0 lg:mt-5 items-center; 
+        @apply flex flex-row h-14 mt-0 lg:mt-5 lg:mx-4 items-center; 
     }
 
     .hms-logo{

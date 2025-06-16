@@ -9,5 +9,10 @@
     }
     .hms-footer span {
         @apply transform rotate-[210deg];
+        @apply text-hms-secondary;
+    }
+
+    .hms-footer p{
+      @apply text-hms-secondary;
     }
   }
