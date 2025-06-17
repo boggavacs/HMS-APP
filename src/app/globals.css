@@ -13,7 +13,6 @@
   --text-3xl: 1.875rem;
   --text-2xl: 2.25rem;
   --text-xl: 1.25rem;
-  /* --text-p: 1.25rem; */
 }
 
 @layer base{
@@ -38,15 +37,11 @@
   }
 
   main{
-    /* @apply max-2xl; */
     @apply relative z-10;
     @apply p-0;
   }
   div {
     @apply mb-3;
-  }
-  main > div:nth-child(2){
-    /* @apply m-5 lg:m-0; */
   }
 
   input{
@@ -63,24 +58,9 @@
 
   ul li{
     @apply list-disc;
-    @apply list-inside;
-    @apply pl-5;
+    @apply ml-12;
   }
 
-  /* h1, h2, h3, h4, h5, h6{
-    @apply text-hms-primary;
-  } */
-
-  /* h1{
-    @apply text-4xl;
-  }
-
-  h2{
-    @apply text-2xl;
-  }
-  h3{
-    @apply text-3xl;
-  } */
 }
 
 @layer components{

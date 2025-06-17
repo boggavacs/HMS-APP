@@ -4,9 +4,18 @@
 
 @layer components{
     .discussion-item {
-       @apply flex flex-row gap-4;
+        @apply flex gap-4 ;
+        @apply underline;
     }
-    .discussion-item p {
-        @apply truncate;
+    .fiber-new-icon {
+        @apply text-hms-quaternary;
+        /* @apply truncate; */
     }
+
+    .discussion-options{
+        @apply flex flex-row items-center justify-start gap-4 ml-9;
+        @apply text-hms-tertiary;
+        @apply text-lg;
+    }
+
 }

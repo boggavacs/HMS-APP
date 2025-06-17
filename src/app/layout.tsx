@@ -25,7 +25,7 @@ export default function RootLayout({
             <div className="bg-pattern"></div>
             <main className="">
               <Header />
-              <div className="mx-5">
+              <div className="mx-5 h-full">
                 {children}
               </div>
               <Footer />

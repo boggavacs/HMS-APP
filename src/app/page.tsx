@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <HeroBanner />
-      <div className="grid gap-4 grid-rows sm:md:lg:grid-cols-[auto_30%] lg:mt-12">
+      <div className="container grid gap-4 grid-rows sm:md:lg:grid-cols-[auto_30%] lg:mt-12">
         <div className="border-0 gap-5 ">
           <h2 className="mb-4 p-0">Job Listings</h2>
           <div className="lg:md:grid grid-cols-[40%_auto] gap-15">
@@ -19,7 +19,7 @@ export default function Home() {
         <div className="border-0 border-primary pl-0 sm:md:lg:border-l-2 border-dotted sm:md:lg:pl-5 align-text-top">
           <h2 className="mb-4 p-0">Discussion board</h2>
           <div>
-            {/* <DiscussionItem /> */}
+            <DiscussionItem />
           </div>
         </div>
       </div>

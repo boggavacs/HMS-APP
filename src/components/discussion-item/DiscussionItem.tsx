@@ -1,12 +1,29 @@
+'use client'
+
 import React from 'react'
-import { FiberNew } from '@mui/icons-material';
+import { FiberNew, Visibility } from '@mui/icons-material';
 import './discussionitem.css';
+import { div } from 'framer-motion/client';
+
 
 export default function DiscussionItem() {
+
+  // Placeholder - replace with business logic  
+  const [items, setItems] = React.useState([1, 2, 3, 4, 5, 6, 7, 8]);
+
   return (
-    <div className='discussion-item'>
-        <FiberNew />
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugiat veniam, unde aut sequi laudantium nulla quo. Fugiat, assumenda tempore fugit odit quisquam, sed ipsum quaerat error sequi reiciendis saepe.</p>
-    </div>
+    items && items.map((item, index) =>
+      <div key={index}>
+        <div className='discussion-item'>
+          <FiberNew className='fiber-new-icon' />
+          <p>Lorem ipsum dolor sit, amet cons adipisicing elit. </p>
+        </div>
+        <div className='discussion-options'>
+          <Visibility className='discussion-item-views-icon' />100k
+          <span className='discussion-item-date'>12/12/2023</span>
+          <span className='discussion-item-author'>...</span>
+        </div>
+      </div>
+    )
   )
 }
