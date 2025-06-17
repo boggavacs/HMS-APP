@@ -1,0 +1,15 @@
+@theme default{
+    --default-font-family: 'Outfit', sans-serif;
+    --breakpoint-desktop: 96rem;
+    --breakpoint-tablet: 64rem;
+    --breakpoint-mobile: 48rem;
+    --color-hms-primary: var(--color-primary);
+    --color-hms-secondary: var(--color-secondary);
+    --color-hms-tertiary: var(--color-tertiary);
+    --color-hms-quaternary: var(--color-quaternary);
+    --color-hms-quinary: var(--color-quinary);
+    /* --text-4xl: 2.25rem;
+    --text-3xl: 1.875rem;
+    --text-2xl: 2.25rem;
+    --text-xl: 1.25rem; */
+  }

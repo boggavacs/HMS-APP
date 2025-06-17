@@ -5,10 +5,10 @@ import Twrap from '../Twrap';
 
 export default function Header() {
   return (
-    <div className='flex hms-header'>
-      <div className="brand-logo">HMS</div>
-      <div className="header-desktop-navigation ">&nbsp;</div>
-      <div className="header-navigation"><Twrap /></div>
+    <div className='hms-header'>
+      <div className="hms-logo">HMS</div>
+      {/* <div className="header-desktop-navigation ">&nbsp;</div> */}
+      <div className="hms-navigation"><Twrap /></div>
     </div>
   )
 }

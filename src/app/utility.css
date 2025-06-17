@@ -1,0 +1,22 @@
+/* 
+
+@utility text-primary{
+  color: var(--color-primary);
+}
+
+@utility text-secondary{
+  color: var(--color-secondary);
+}
+
+@utility text-tertiary{
+  color: var(--color-tertiary);
+}
+
+@utility text-quaternary{
+  color: var(--color-quaternary);
+}
+
+@utility bg-primary{
+  color: var(--color-primary);
+} */
+

@@ -1,5 +1,6 @@
-.search-input{
+/* .search-input{
+    @apply min-w-0 sm:min-w-[520px] lg:min-w-[520px];
     @apply h-14;
-    @apply border-1 border-[#7291A0] text-center text-xl sm:text-3xl lg:text-3xl;
+    @apply border-1 border-[#7291A0] text-center text-3xl;
     @apply focus:outline-none disabled:cursor-not-allowed;
-}
+} */

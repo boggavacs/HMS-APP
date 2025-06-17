@@ -20,6 +20,7 @@
 // }
 
 import { Login, Menu } from '@mui/icons-material';
+import '../components/header/header.css';
 
 export default function Twrap() {
   return (

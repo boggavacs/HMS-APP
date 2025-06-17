@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
+
+  @layer components {
+    .hms-footer{
+        @apply flex justify-end items-center h-24 gap-2 lg:gap-5 pr-5 text-hms-secondary bg-hms-primary;
+        @apply lg:text-xl font-thin;
+    }
+    .hms-footer span {
+        @apply transform rotate-[210deg];
+        @apply text-hms-secondary;
+    }
+
+    .hms-footer p{
+      @apply text-hms-secondary;
+    }
+  }

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
+
+@layer components{
+    .job-listing{
+        @apply flex;
+    }
+
+    .job-listing-brand-logo{
+        width: 100px;
+        height: auto;
+        @apply mr-5;
+        @apply opacity-35;
+        @apply flex items-center justify-center;
+    }
+
+    .list-id{
+        @apply text-hms-tertiary;
+    } 
+}

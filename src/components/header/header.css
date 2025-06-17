@@ -1,39 +1,94 @@
+/* @import "tailwindcss";
 
-.hms-header{
-    @apply p-0 sm:py-5 lg:py-5;
+
+@layer components{
+   .hms-header{
+        @apply p-0 w-full sm:py-5 lg:py-5 flex flex-row;
+    }
+
+   .brand-logo {
+        @apply w-[155px] sm:w-[125px];
+        @apply h-[50px] sm:h-[60px];
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--color-quaternary);
+        background-color: #023047;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @apply text-[40px] sm:md:text-[48px];
+    }
+
+   .header-navigation{
+        @apply flex;
+        @apply justify-end;
+        @apply gap-5;
+        @apply w-full;
+        @apply items-center;
+        @apply text-[30px] sm:text-[30px];
+    }
+
+   .header-desktop-navigation{
+        @apply grow hidden sm:block;
+        @apply text-right;
+    }
+
+   .header-nav-icons{
+        @apply flex;
+        @apply gap-5 pr-5 sm:pr-0;
+        @apply items-center;
+        @apply text-[30px] sm:text-[30px];
+    }
+    src/components/header/header.css
+} */
+
+
+/* @import "tailwindcss"; */
+@import "tailwindcss";
+@import "../../app/utility.css";
+@import "../../app/theme.css";
+
+@layer components{
+    .hms-header{
+        @apply flex flex-row h-14 mt-0 lg:mt-5 lg:mx-4 items-center; 
+    }
+
+    .hms-logo{
+        @apply w-[155px] sm:w-[125px];
+        @apply h-[50px] sm:h-[60px];
+        @apply text-hms-secondary;
+        @apply bg-hms-primary;
+        @apply flex;
+        @apply items-center;
+        @apply justify-center;
+        @apply text-center;
+        @apply text-[40px] sm:md:text-[48px];
+        @apply text-4xl lg:text-5xl;
+        @apply font-bold;
+    }
+
+    .hms-navigation{
+        @apply flex;
+        @apply justify-end;
+        @apply gap-5;
+        @apply w-full;
+        @apply items-center;
+        @apply text-[30px] sm:text-[30px];
+    }
+
+    .header-nav-icons{
+        @apply flex;
+        @apply gap-5 pr-5 sm:pr-0;
+        @apply items-center;
+        /* @apply text-2xl; */
+        /* @apply text-[30px] sm:text-[30px]; */
+    }
+
+    .header-nav-icons > :nth-child(1) {
+        /* @apply text-secondary text-8xl; */
+
+    }
 }
 
-.brand-logo {
-    @apply w-[155px] sm:w-[125px];
-    @apply h-[50px] sm:h-[60px];
-    font-size: 48px;
-    font-weight: 700;
-    color: #FFB703;
-    background-color: #023047;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    @apply text-[40px] sm:md:text-[48px];
-}
 
-.header-navigation{
-    @apply flex;
-    @apply justify-end;
-    @apply gap-5;
-    @apply w-full sm:w-1/4;
-    @apply items-center;
-    @apply text-[30px] sm:text-[30px];
-}
-
-.header-desktop-navigation{
-    @apply grow hidden sm:block;
-    @apply text-right;
-}
-
-.header-nav-icons{
-    @apply flex;
-    @apply gap-5 pr-5 sm:pr-0;
-    @apply items-center;
-    @apply text-[30px] sm:text-[30px];
-}
