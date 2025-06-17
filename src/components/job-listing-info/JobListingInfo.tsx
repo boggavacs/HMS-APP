@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '@mui/material/Button';
-import {button} from '../common/CommonComponents';
+// import Button from '@mui/material/Button';
+// import {button} from '../common/CommonComponents';
 import './joblistinginfo.css';
 
 export default function JobListingInfo() {

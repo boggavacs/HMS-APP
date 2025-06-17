@@ -3,13 +3,12 @@
 import React from 'react'
 import { FiberNew, Visibility } from '@mui/icons-material';
 import './discussionitem.css';
-import { div } from 'framer-motion/client';
 
 
 export default function DiscussionItem() {
 
   // Placeholder - replace with business logic  
-  const [items, setItems] = React.useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  const [items] = React.useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
     items && items.map((item, index) =>

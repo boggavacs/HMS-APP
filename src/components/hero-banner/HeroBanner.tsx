@@ -1,7 +1,7 @@
 import React from 'react'
 import './hero-banner.css';
 import Search from '../search/Search';
-import { button } from '../common/CommonComponents';
+// import { button } from '../common/CommonComponents';
 
 export default function HeroBanner() {
   return (
