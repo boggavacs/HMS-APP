@@ -22,6 +22,10 @@
     @apply font-light;
   }
 
+  body > div:nth-child(1){
+    @apply mb-0;
+  }
+
   body h1{
     @apply text-4xl;
     @apply font-semibold;
@@ -39,6 +43,8 @@
   main{
     @apply relative z-10;
     @apply p-0;
+    /* @apply border-2; */
+    @apply mb-0
   }
   div {
     @apply mb-3;

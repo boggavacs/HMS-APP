@@ -3,9 +3,12 @@
 @import "../../app/theme.css";
 
   @layer components {
-    .hms-footer{
-        @apply flex justify-end items-center h-24 gap-2 lg:gap-5 pr-5 text-hms-secondary bg-hms-primary;
+    .hms-footer {
+        @apply flex justify-end items-center h-24 gap-2 lg:gap-5 pr-5 text-hms-secondary bg-hms-primary bottom-0 left-0 right-0; 
+        
+        /* @apply flex justify-end items-center h-24 gap-2 lg:gap-5 pr-5 text-hms-secondary bg-hms-primary; */
         @apply lg:text-xl font-thin;
+        @apply mb-0;
     }
     .hms-footer span {
         @apply transform rotate-[210deg];

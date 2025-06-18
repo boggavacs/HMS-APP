@@ -22,7 +22,15 @@
 import { Login, Menu } from '@mui/icons-material';
 import '../components/header/header.css';
 
-export default function Twrap() {
+
+interface Menu{
+  menu: {
+    icon: React.ReactNode;
+    label: string;
+  }[]; 
+}
+
+export default function Twrap(props: any) {
   return (
     <div className="header-nav-icons">
       <Login />

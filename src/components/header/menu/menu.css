@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "../../../app/utility.css";
+@import "../../../app/theme.css";
+
+
+@layer components {
+    .menu-pannel{
+        @apply fixed top-0 right-0 bg-red-500 z-50 w-[20%] h-[100%] hidden; 
+    }
+}
+        /* @apply absolute top-0 right-0 bg-red-500 z-50 w-[20%] h-full; */
+        /* @apply bg-red-400; */
+        /* @apply absolute top-0 border-2 flex h-full w-[20%] right-0; */
+    /* } */
+/* } */

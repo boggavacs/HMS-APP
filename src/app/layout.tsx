@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import React from "react";
 import Footer from "@/components/footer/Footer";
 import { Providers } from "./providers";
+import Menu from "@/components/header/menu/Menu";
 
 export const metadata: Metadata = {
   title: "hms.ro",
@@ -21,16 +22,18 @@ export default function RootLayout({
       <React.StrictMode>
         <body>
           <Providers>
-            <div className="flex justify-center">
+            <Menu />
+            <div className="flex justify-center mb-0">
             <div className="bg-pattern"></div>
             <main className="">
               <Header />
               <div className="mx-5 h-full">
                 {children}
               </div>
-              <Footer />
+              {/* <Footer /> */}
             </main>
             </div>
+            <Footer />
           </Providers>
         </body>
       </React.StrictMode>
